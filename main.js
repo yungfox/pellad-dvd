@@ -2,7 +2,7 @@ const CANVAS_WIDTH = 640
 const CANVAS_HEIGHT = 480
 const SCALE_FACTOR = 0.075
 const FPS = 50
-const SPEED_VALUE = 100 * (1 / FPS)
+const SPEED_VALUE = 250 * (1 / FPS)
 
 // poor man's vectors :v
 const position = { x: CANVAS_WIDTH / 2, y: CANVAS_HEIGHT / 2 }
