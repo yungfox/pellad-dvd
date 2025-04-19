@@ -1,8 +1,8 @@
 const CANVAS_WIDTH = 640
 const CANVAS_HEIGHT = 480
 const SCALE_FACTOR = 0.075
-const FPS = 50
-const SPEED_VALUE = 250 * (1 / FPS)
+const FPS = 60
+const SPEED_VALUE = 0.2
 
 // poor man's vectors :v
 const position = { x: CANVAS_WIDTH / 2, y: CANVAS_HEIGHT / 2 }
@@ -125,8 +125,8 @@ window.onload = () => {
             update_tint()
         }
     
-        position.x += speed.x;
-        position.y += speed.y;
+        position.x += speed.x * delta;
+        position.y += speed.y * delta;
 
         const frame_duration = (1000 / FPS) - delta
     
